@@ -1,0 +1,50 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+{% block content %}
+<div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- <script type=text/javascript>
+        $(function() {
+          $('a.btn').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/generate_link',
+                function(data) {
+              console.log(1)
+            });
+            return false;
+          });
+        });
+</script> -->
+<header>
+
+    <style>
+      header{
+        text-align: center;
+      }
+    </style>
+    <!-- Background image -->
+    <div
+      class="p-5 text-center bg-image"
+      style="
+        background-image: url('https://static.vecteezy.com/system/resources/previews/002/967/565/large_2x/abstract-geometric-hexagons-pattern-background-medical-science-free-vector.jpg');
+        height:92.6vh;
+        width:100%;
+      ">
+      <div class="mask d-flex justify-content-center align-items-center h-100 " style="background-color: rgba(0, 0, 0, 0.6); text-align: center;">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">The Verge.com daily scraper</h1>
+            <h4 class="mb-3">Top news from the verge.com is scraped daily and stored in a DB and a csv file</h4>
+            <h5 class="mb-3">
+                Download the file here👇
+            </h5>
+            <a href="{{res}}"class="btn btn-outline-light btn-lg" type="submit">Download csv file</a>
+          </div>
+        </div>
+      </div>
+      <h5 class="mb-3 dev">Developed with ❤️ by <span>Srinivas</span></h5>
+
+    </div>
+    <!-- Background image -->
+  </header>
+</div>
+  {%endblock%}
